@@ -11,7 +11,7 @@ This repository is the documentation for the self-driving car challenge designed
 ## Traction
 Traction is controlled by a motor driver L298N connected to an electric motor with a pair of gears that duplicate torque. These parts where designed by the team and the stl file are available in this repository.
 
-![Traction System](WRO_2026_UDBTEAM\images\traction.png)
+![Traction System](images\traction.png)
 
 ---
 

@@ -25,5 +25,7 @@ The steering is controlled by a MG90S servo motor using some parts of the LK KOK
 ### Open Challenge
 The ultrasonic sensors on the left and right side of the car are used to measure how close to the center of the track the car is and change the steering angle to maintain the car in the center. When the sum of the distances is larger than 130 cm the car is likely near the corner, so it steers to the direction with the largest distance. While the car is turning the readings are ignored for a fixed amount of time and then the loop continues.
 
+here is the youtube link of the first time the car did the open challenge: https://www.youtube.com/watch?v=LxlPVEr9SCA
+
 ### Obstacle Challenge
 The color sensor  checks every iteration of the loop for the orange and blue lines to know if it must turn if not it checks for the nearest obstacle detected  by the camera, stores the color cube in a variable and calculates how far is the nearest obstacle from the center in the horizontal axis this distance is used to keep the nearest cube in front of the car, then the car approaches the  obstacle using the front ultrasonic sensor to avoid getting to close to it and then it turns right or left depending on the last color stored in memory then the code repeats.

@@ -1,5 +1,6 @@
 # WRO_2026_UDBTEAM
 Proyecto del vehículo autónomo para WRO 2026 - Futuros Ingenieros
+![UDB TEAM](images/UDBTEAMPHOTO.jpeg)
 
 # Self-Driving Car Challenge Documentation
 
@@ -9,15 +10,15 @@ This repository is the documentation for the self-driving car challenge designed
 ---
 
 ## Traction
-Traction is controlled by a motor driver L298N connected to an electric motor with a pair of gears that duplicate torque. These parts where designed by the team and the stl file are available in this repository.
+Traction is controlled by a motor driver L298N connected to an electric motor with a pair of gears that duplicate torque. These parts where designed by the team and the stl file are available in this repository. We chose L298 because it can be powered with up to 35V and 2A and we are powering it with a 16V regulated to 12V to ensure a constant voltage to electric motor [1].
 
 ![Traction System](images/traction.png)
 
 ---
 
 ## Steering
-The steering is controlled by a MG90S servo motor using some parts of the LK KOKOINO Rear-Wheel drive robot car kit.
-
+The steering is controlled by a MG90S servo motor using some parts of the LK KOKOINO Rear-Wheel drive robot car kit [2].
+the MG90S has the same dimensions as the sg90 servo and works the same,  but has metal gears that improve durability and torque.
 ---
 
 ## Decision Making
@@ -29,3 +30,10 @@ here is the youtube link of the first time the car did the open challenge: https
 
 ### Obstacle Challenge
 The color sensor  checks every iteration of the loop for the orange and blue lines to know if it must turn if not it checks for the nearest obstacle detected  by the camera, stores the color cube in a variable and calculates how far is the nearest obstacle from the center in the horizontal axis this distance is used to keep the nearest cube in front of the car, then the car approaches the  obstacle using the front ultrasonic sensor to avoid getting to close to it and then it turns right or left depending on the last color stored in memory then the code repeats.
+
+---
+
+### references 
+
+[1] L298N Module datasheet: https://de.scribd.com/document/482249360/Arduino-L298N-DATASHEET
+[2]  LK KOKOINO Rear-Wheel drive robot car kit: https://www.amazon.com/dp/B0FC2X2LVZ?lv=shuf&channelId=500&plpRedirect=mhFallback
